@@ -1,0 +1,14 @@
+body {
+  font-family: arial;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  background: lightblue;
+  border: 1px solid red;
+}
