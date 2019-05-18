@@ -1,0 +1,22 @@
+body {
+  font-family: arial;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 25% 50% 25%; */
+  /* grid-template-rows: 300px 300px; */
+  /* filas/columnas  */
+  grid-template: 300px 100px  100px/ 50% 200px 100px ;
+}
+.item{
+  background: lightblue;
+  border: 1px solid red;
+}
+.item:nth-of-type(4)
+{
+  overflow: scroll;
+  display: grid;
+  grid-template: 50px 50px 50px/50px 50px 50px ;
+  background: blue;
+}
