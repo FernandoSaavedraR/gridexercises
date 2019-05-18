@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: arial;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  height: 100%;
+  /* start end center stretch:estirar contenido al espacio disponible */
+  justify-items:center;
+  align-items: center;
+}
+
+.item {
+  background: lightblue;
+  border: 1px solid red;
+}
+.item:nth-of-type(5){
+  align-self: start;
+  justify-self: start;
+}

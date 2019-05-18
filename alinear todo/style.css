@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: arial;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  height: 100%;
+  /*start end center stretch space-around space-between space-evenly  */
+  justify-content: space-evenly;
+  align-content: space-around;
+  /* around:espaciado de n cantidad a los lados (se suman los interiores)
+  between:espaciado solo en el interior
+  evenly:espacio uniforme */
+
+
+}
+
+.item {
+  background: lightblue;
+  border: 1px solid red;
+}
+.item:nth-of-type(5){
+
+}
