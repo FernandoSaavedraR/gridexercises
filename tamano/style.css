@@ -1,0 +1,29 @@
+body {
+  font-family: arial;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(4,1fr)/ repeat(4,1fr);
+  gap:10px;
+  height: 100vh;
+}
+.item{
+  background: lightblue;
+  border: 1px solid red;
+}
+.item:nth-child(1){
+  background-color: blue;
+  /*  le indica las lineas donde empezar y terminar*/
+  grid-column-start: 1;
+  grid-column-end:3;
+}
+.item:nth-child(8){
+    /* donde inicia donde termina */
+    /* -1 desde el inicio/hasta el final. depende donde esté */
+  grid-column:1/ -1 ;
+}
+.item:nth-of-type(7){
+  /* span cubre n espacios */
+  grid-column: 2/span 2;
+}
